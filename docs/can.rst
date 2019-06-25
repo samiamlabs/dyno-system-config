@@ -26,6 +26,7 @@ Here are the necessary steps in short form:
  - Copy the contents of the ``slcan`` folder in this repo to ``/usr/local/bin`` and make sure the scripts are exucutable.
  - Run ``sudo atp-get install can-utils at`` in a terminal.
  - Add ``can``, ``can_raw`` and ``slcan`` to ``/etc/modules`` as a list (each goes in a separate line).
+ - Restart the computer.
 
 To test that everyting is working, run ``candump can0`` in one terminal and ``cansend can0 123#DEADBEEF``.
 
