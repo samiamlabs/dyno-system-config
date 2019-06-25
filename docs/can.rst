@@ -4,7 +4,7 @@ CAN
 USB-CAN
 -------
 
-We have 2 different USB can interfaces.
+We at Dyno use two slightly different USB can interfaces.
  - 70200_ from Auvidea with muCAN_ firmware
  - CANable_ with cantact_ firmware
 
