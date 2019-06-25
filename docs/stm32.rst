@@ -36,7 +36,7 @@ Set python3.7 to default python version in bash:
 
 .. code:: bash
 
-  echo "alias python=python3" >> ~/.bash_aliases
+  echo "alias python=python3.7" >> ~/.bash_aliases
 
 Verify successful installation and versions:
 
