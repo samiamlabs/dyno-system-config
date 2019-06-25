@@ -27,6 +27,9 @@ Here are the necessary steps in short form:
  - Run ``sudo atp-get install can-utils at`` in a terminal.
  - Add ``can``, ``can_raw`` and ``slcan`` to ``/etc/modules`` as a list (each goes in a separate line).
  - Restart the computer.
+ 
+.. Note::
+ With this default setup, the speed of the CAN bus is set to 1000 Kbit/s
 
 To test that everyting is working, run ``candump can0`` in one terminal and ``cansend can0 123#DEADBEEF``.
 
