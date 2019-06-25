@@ -1,5 +1,7 @@
 # muCAN module
-
 ACTION=="add", ENV{ID_MODEL}=="muCAN", ENV{SUBSYSTEM}=="tty", RUN+="/usr/bin/logger [udev] Lawicel CANUSB detected - running slcan_add.sh!", RUN+="/usr/local/bin/slcan_add.sh $kernel"
-
 ACTION=="remove", ENV{ID_MODEL}=="muCAN", ENV{SUBSYSTEM}=="usb", RUN+="/usr/bin/logger [udev] Lawicel CANUSB removed - running slcan_remove.sh!", RUN+="/usr/local/bin/slcan_remove.sh"
+
+# CANable module
+ACTION=="add", ENV{ID_MODEL}=="CANtact_dev", ENV{SUBSYSTEM}=="tty", RUN+="/usr/bin/logger [udev] Lawicel CANUSB detected - running slcan_add.sh!", RUN+="/usr/local/bin/slcan_add.sh $kernel"
+ACTION=="remove", ENV{ID_MODEL}=="CANtact_dev", ENV{SUBSYSTEM}=="usb", RUN+="/usr/bin/logger [udev] Lawicel CANUSB removed - running slcan_remove.sh!", RUN+="/usr/local/bin/slcan_remove.sh"
