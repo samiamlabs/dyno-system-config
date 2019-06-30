@@ -34,6 +34,6 @@ __ Repo_
 .. Note::
  With this default setup, the speed of the CAN bus is set to 1000 Kbit/s
 
-To test that everyting is working, run ``candump can0`` in one terminal and ``cansend can0 123#DEADBEEF``.
+To test that everyting is working, connect an interface run ``candump can0`` in one terminal and ``cansend can0 123#DEADBEEF``.
 
 You should see the message you sent in the terminal where you ran ``candump``.
