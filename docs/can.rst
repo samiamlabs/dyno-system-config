@@ -22,11 +22,14 @@ __ Lawicel_
 .. _here: http://pascal-walter.blogspot.com/2015/08/installing-lawicel-canusb-on-linux.html
 
 Here are the necessary steps in short form:
- - Copy ``90-slcan.rules`` from this repo to ``/etc/udev/rules.d/``.
+ - Copy ``90-slcan.rules`` from `this repo`__ to ``/etc/udev/rules.d/``.
  - Copy the contents of the ``slcan`` folder in this repo to ``/usr/local/bin`` and make sure the scripts are exucutable.
- - Run ``sudo atp-get install can-utils at`` in a terminal.
+ - Run ``sudo apt-get install can-utils at`` in a terminal.
  - Add ``can``, ``can_raw`` and ``slcan`` to ``/etc/modules`` as a list (each goes in a separate line).
  - Restart the computer.
+ 
+.. _Repo: https://github.com/samiamlabs/dyno-system-config
+__ Repo_
  
 .. Note::
  With this default setup, the speed of the CAN bus is set to 1000 Kbit/s
