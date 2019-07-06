@@ -40,3 +40,7 @@ Logging in
 .. code:: bash
 
   balena login
+
+For local mode developement tips, use this_ link.
+
+.. _this: https://www.balena.io/docs/learn/develop/local-mode/
