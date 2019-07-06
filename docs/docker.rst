@@ -23,6 +23,8 @@ Run docker without sudo:
 .. code:: bash
 
   sudo usermod -aG docker ${USER}
+  
+Restart the computer for the groups to update.
 
 Install docker-compose by running:
 
