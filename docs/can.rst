@@ -4,7 +4,7 @@ CAN
 USB-CAN
 -------
 
-We at Dyno use two slightly different USB can interfaces.
+We at Dyno use two slightly different clones of the `Lawicel CANUSB`__ USB can interface.
  - 70200_ from Auvidea with muCAN_ firmware
  - CANable_ with cantact_ firmware
 
@@ -13,8 +13,7 @@ We at Dyno use two slightly different USB can interfaces.
 .. _CANable: https://canable.io/
 .. _cantact: https://github.com/normaldotcom/cantact-fw
 
-Both of these are clones of `Lawicel CANUSB`__. Full instructions for
-setup and troubleshooting with socketcan on Linux can be found here_.
+Full instructions for setup and troubleshooting with socketcan on Linux can be found here_.
 
 .. _Lawicel: https://www.lawicel-shop.se/lawicel-canusb-adapter-1m-usb-cable
 __ Lawicel_
@@ -33,6 +32,9 @@ __ Repo_
  
 .. Note::
  With this default setup, the speed of the CAN bus is set to 1000 Kbit/s
+ 
+ We also have a PCAN-USB interface.
+ 
 
 To test that everyting is working, connect an interface run ``candump can0`` in one terminal and ``cansend can0 123#DEADBEEF``.
 
